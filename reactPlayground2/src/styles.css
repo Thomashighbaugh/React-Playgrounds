@@ -1,0 +1,44 @@
+.App {
+  font-family: monospace;
+  font-weight: 900;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+body {
+  background: black;
+  color: aqua;
+}
+
+h1 {
+  background: aqua;
+  color: black;
+  width: 40%;
+  font-size: 36px;
+  float: left;
+  padding: 5%;
+  padding-bottom: 7%;
+}
+h2 {
+  background: aqua;
+  color: black;
+  text-align: left;
+  width: 45%;
+  float: right;
+}
+
+button {
+  background: aqua;
+  color: black;
+  border: 5px black;
+  height: 35px;
+  width: 15%;
+  margin-top: 5%;
+  float: right;
+}
+
+p {
+  padding: 10%;
+  margin-top: 15%;
+  border: 10px aqua;
+  border-style: dotted;
+}

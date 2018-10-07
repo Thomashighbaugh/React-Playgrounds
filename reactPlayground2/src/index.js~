@@ -1,0 +1,48 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+let count = 0;
+const addOne = () => {
+  count++;
+  renderCounterApp();
+};
+const minusOne = () => {
+  count--;
+  renderCounterApp();
+};
+const reset = () => {
+  count = 0;
+  renderCounterApp();
+};
+
+const renderCounterApp = () => {
+  function App() {
+    return (
+      <div className="App">
+        <h1>Playground 2</h1>
+        <br />
+        <h2>The Counter App</h2>
+        <h2> Count: {count}</h2>
+        <button onClick={minusOne}>-1</button>
+        <button onClick={reset}>RESET</button>
+        <button onClick={addOne}>+1</button>\
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>
+          Above is a simple React App that accepts clicks to modify the above
+          counter! While not of much practical use it is the next stage in
+          developing my ReactJS skills.
+        </p>
+      </div>
+    );
+  }
+  ReactDOM.render(<App />, rootElement);
+};
+
+const rootElement = document.getElementById("root");
+renderCounterApp();
